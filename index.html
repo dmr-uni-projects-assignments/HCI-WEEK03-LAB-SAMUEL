@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Developing a Webpage Using Semantic HTML and Form Elements
+
+    Read the following article before working on the task below: https://medium.com/@unosega/html-basic-02-semantic-html-forms-and-tables-b2f162379ab8
+    Reopen the task you previously worked on in session 2 about the multipage website. Then, develop that website so it has a proper Semantic HTML structure.
+    Also add a form element (on any page) within your HTML code structure.
+    In the form element section, you must use more than three types of input (radio, checkbox, file, etc.). You can see the various input types at the following link: https://www.w3schools.com/html/html_form_input_types.asp
+    Extra score will be given if you add a table component in your HTML structure.
+    The content structure of the Semantic HTML must align with the theme or topic of your website -->
 
 <head>
     <meta charset="UTF-8">
@@ -41,6 +49,7 @@
         tradition of religious tolerance and pluralism. The Istiqlal Mosque, the largest in Southeast Asia, stands as a
         symbol of the city’s commitment to interfaith harmony.[13][14]
 
+
         Jakarta's main challenges include rapid urban growth, ecological breakdown, air pollution, gridlocked traffic,
         congestion, and flooding due to subsidence and water extraction (sea level rise is relative, not absolute). Part
         of North Jakarta is sinking up to 17 cm (6.7 inches) annually, meanwhile the southern part is relatively safe.
@@ -57,6 +66,42 @@
         <li><a href="geography.html">Geography</a></li>
         <li><a href="gallery.html">Gallery</a></li>
     </ul>
+
+    <h2 class="subtitle">Want to book a flight to Jakarta?</h2>
+    <form action="#" method="post">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Full Name" required><br><br>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Email"><br><br>
+
+        <p>Choose your airline:</p>
+        <input type="radio" id="garuda" name="airline" value="Garuda Indonesia" required>
+        <label for="garuda">Garuda Indonesia</label><br>
+        <input type="radio" id="lion" name="airline" value="Lion Air">
+        <label for="lion">Lion Air</label><br>
+        <input type="radio" id="batik" name="airline" value="Batik Air">
+        <label for="batik">Batik Air</label><br>
+        <input type="radio" id="citilink" name="airline" value="Citilink">
+        <label for="citilink">Citilink</label>
+
+        <p>What month do you want to fly?</p>
+        <select id="month" name="month">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>
